@@ -18,8 +18,7 @@ class ILTodoTableViewController: UITableViewController, UITableViewDataSource, U
         var task1 = ILTask(description: "Go buy some milk")
         var task2 = ILTask(description: "Learn some Swift")
         
-        self.tasks.addObject(task1)
-        self.tasks.addObject(task2)
+        self.tasks.addObjectsFromArray([task1, task2])
     
     }
     
@@ -50,11 +49,6 @@ class ILTodoTableViewController: UITableViewController, UITableViewDataSource, U
         newTaskVC.todoVC = self
                 
         self.navigationController.pushViewController(newTaskVC, animated: true)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // #pragma mark - Table view data source

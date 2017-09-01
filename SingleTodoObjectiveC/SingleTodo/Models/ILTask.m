@@ -10,4 +10,6 @@
 
 @implementation ILTask
 
+@synthesize description = _description;
+
 @end

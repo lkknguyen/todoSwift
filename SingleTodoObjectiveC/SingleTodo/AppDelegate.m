@@ -7,13 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import "ILTodoTableViewController.h"
+#import "TasksTableViewController.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ILTodoTableViewController *todoVC = [[ILTodoTableViewController alloc] init];
+    TasksTableViewController *todoVC = [[TasksTableViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:todoVC];
     
     self.window.rootViewController = navigationController;

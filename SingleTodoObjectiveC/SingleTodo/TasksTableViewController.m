@@ -6,18 +6,18 @@
 //  Copyright (c) 2014 icalialabs. All rights reserved.
 //
 
-#import "ILTodoTableViewController.h"
+#import "TasksTableViewController.h"
 #import "Task.h"
 #import "ILNewTaskViewController.h"
 
-@interface ILTodoTableViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface TasksTableViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) NSMutableArray *tasks;
 @property (strong, nonatomic) IBOutlet UITableView *tasksTable;
 
 @end
 
-@implementation ILTodoTableViewController
+@implementation TasksTableViewController
 
 - (void)viewDidLoad
 {

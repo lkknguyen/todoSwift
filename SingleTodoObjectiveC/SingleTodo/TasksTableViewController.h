@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Task.h"
 
-@interface ILTodoTableViewController : UITableViewController
+@interface TasksTableViewController : UITableViewController
 
 - (void) AddTask:(Task *)task;
 

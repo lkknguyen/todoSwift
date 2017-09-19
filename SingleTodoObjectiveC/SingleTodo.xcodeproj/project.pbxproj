@@ -21,7 +21,7 @@
 		51EE3AC2193DF5BC00BD2C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3AA4193DF5BC00BD2C04 /* UIKit.framework */; };
 		51EE3ACA193DF5BC00BD2C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AC8193DF5BC00BD2C04 /* InfoPlist.strings */; };
 		51EE3ACC193DF5BC00BD2C04 /* SingleTodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ACB193DF5BC00BD2C04 /* SingleTodoTests.m */; };
-		51EE3AD8193DF61100BD2C04 /* ILTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AD7193DF61100BD2C04 /* ILTask.m */; };
+		51EE3AD8193DF61100BD2C04 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AD7193DF61100BD2C04 /* Task.m */; };
 		51EE3ADC193DF6EF00BD2C04 /* ILTodoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADA193DF6EF00BD2C04 /* ILTodoTableViewController.m */; };
 		51EE3ADD193DF6EF00BD2C04 /* ILTodoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3ADB193DF6EF00BD2C04 /* ILTodoTableViewController.xib */; };
 		51EE3AE1193E14AA00BD2C04 /* ILNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADF193E14AA00BD2C04 /* ILNewTaskViewController.m */; };
@@ -58,8 +58,8 @@
 		51EE3AC7193DF5BC00BD2C04 /* SingleTodoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleTodoTests-Info.plist"; sourceTree = "<group>"; };
 		51EE3AC9193DF5BC00BD2C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51EE3ACB193DF5BC00BD2C04 /* SingleTodoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTodoTests.m; sourceTree = "<group>"; };
-		51EE3AD6193DF61100BD2C04 /* ILTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTask.h; sourceTree = "<group>"; };
-		51EE3AD7193DF61100BD2C04 /* ILTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTask.m; sourceTree = "<group>"; };
+		51EE3AD6193DF61100BD2C04 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		51EE3AD7193DF61100BD2C04 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
 		51EE3AD9193DF6EF00BD2C04 /* ILTodoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTodoTableViewController.h; sourceTree = "<group>"; };
 		51EE3ADA193DF6EF00BD2C04 /* ILTodoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTodoTableViewController.m; sourceTree = "<group>"; };
 		51EE3ADB193DF6EF00BD2C04 /* ILTodoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILTodoTableViewController.xib; sourceTree = "<group>"; };
@@ -175,8 +175,8 @@
 		51EE3AD5193DF5FA00BD2C04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				51EE3AD6193DF61100BD2C04 /* ILTask.h */,
-				51EE3AD7193DF61100BD2C04 /* ILTask.m */,
+				51EE3AD6193DF61100BD2C04 /* Task.h */,
+				51EE3AD7193DF61100BD2C04 /* Task.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -286,7 +286,7 @@
 				51EE3AB1193DF5BC00BD2C04 /* ILAppDelegate.m in Sources */,
 				51EE3ADC193DF6EF00BD2C04 /* ILTodoTableViewController.m in Sources */,
 				51EE3AB7193DF5BC00BD2C04 /* ILViewController.m in Sources */,
-				51EE3AD8193DF61100BD2C04 /* ILTask.m in Sources */,
+				51EE3AD8193DF61100BD2C04 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +491,7 @@
 				51EE3AD1193DF5BC00BD2C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51EE3AD2193DF5BC00BD2C04 /* Build configuration list for PBXNativeTarget "SingleTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +500,7 @@
 				51EE3AD4193DF5BC00BD2C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ILTask.h"
+#import "Task.h"
 
 @interface ILTodoTableViewController : UITableViewController
 
-- (void) AddTask:(ILTask *)task;
+- (void) AddTask:(Task *)task;
 
 @end

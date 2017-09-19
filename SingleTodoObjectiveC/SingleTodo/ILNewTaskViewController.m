@@ -8,7 +8,7 @@
 
 #import "ILNewTaskViewController.h"
 #import "ILTodoTableViewController.h"
-#import "ILTask.h"
+#import "Task.h"
 
 
 @interface ILNewTaskViewController ()
@@ -40,7 +40,7 @@
 }
 - (IBAction)addTaskButtonPressed:(id)sender
 {
-    ILTask *task = [[ILTask alloc] init];
+    Task *task = [[Task alloc] init];
     task.description = self.descriptionTextField.text;
     task.done = NO;
     

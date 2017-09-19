@@ -7,7 +7,7 @@
 //
 
 #import "ILTodoTableViewController.h"
-#import "ILTask.h"
+#import "Task.h"
 #import "ILNewTaskViewController.h"
 
 @interface ILTodoTableViewController () <UITableViewDataSource, UITableViewDelegate>
@@ -46,11 +46,8 @@
 
 - (void) loadTasks
 {
-    ILTask *task1 = [[ILTask alloc] init];
-    task1.description = @"Go buy some milk";
-    
-    ILTask *task2 = [[ILTask alloc] init];
-    task2.description = @"Learn some SWIFT";
+    Task *task1 = [[Task alloc] initWithDescription:@"Go buy milk"];
+    Task *task2 = [[Task alloc] initWithDescription:@"Learn swift programming"];
     
     [self.tasks addObject:task1];
     [self.tasks addObject:task2];
@@ -87,7 +84,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    ILTask *task = self.tasks[indexPath.row];
+    Task *task = self.tasks[indexPath.row];
     cell.textLabel.text = task.description;
     if (task.isDone) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
@@ -103,12 +100,12 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     [self.tasksTable deselectRowAtIndexPath:indexPath animated:NO];
-    ILTask *task = [self.tasks objectAtIndex:indexPath.row];
+    Task *task = [self.tasks objectAtIndex:indexPath.row];
     task.done = !task.isDone;
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
 }
 
-- (void)AddTask:(ILTask *)task
+- (void)AddTask:(Task *)task
 {
     [self.tasks addObject:task];
     [self.tasksTable reloadData];

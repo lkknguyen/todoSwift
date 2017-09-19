@@ -6,10 +6,10 @@
 //  Copyright (c) 2014 icalialabs. All rights reserved.
 //
 
-#import "ILAppDelegate.h"
+#import "AppDelegate.h"
 #import "ILTodoTableViewController.h"
 
-@implementation ILAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

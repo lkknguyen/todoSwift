@@ -12,7 +12,7 @@
 		51EE3AA5193DF5BC00BD2C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3AA4193DF5BC00BD2C04 /* UIKit.framework */; };
 		51EE3AAB193DF5BC00BD2C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AA9193DF5BC00BD2C04 /* InfoPlist.strings */; };
 		51EE3AAD193DF5BC00BD2C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AAC193DF5BC00BD2C04 /* main.m */; };
-		51EE3AB1193DF5BC00BD2C04 /* ILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */; };
+		51EE3AB1193DF5BC00BD2C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */; };
 		51EE3AB4193DF5BC00BD2C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AB2193DF5BC00BD2C04 /* Main.storyboard */; };
 		51EE3AB7193DF5BC00BD2C04 /* ILViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */; };
 		51EE3AB9193DF5BC00BD2C04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AB8193DF5BC00BD2C04 /* Images.xcassets */; };
@@ -47,8 +47,8 @@
 		51EE3AAA193DF5BC00BD2C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51EE3AAC193DF5BC00BD2C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51EE3AAE193DF5BC00BD2C04 /* SingleTodo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingleTodo-Prefix.pch"; sourceTree = "<group>"; };
-		51EE3AAF193DF5BC00BD2C04 /* ILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILAppDelegate.h; sourceTree = "<group>"; };
-		51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILAppDelegate.m; sourceTree = "<group>"; };
+		51EE3AAF193DF5BC00BD2C04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		51EE3AB3193DF5BC00BD2C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51EE3AB5193DF5BC00BD2C04 /* ILViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILViewController.h; sourceTree = "<group>"; };
 		51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILViewController.m; sourceTree = "<group>"; };
@@ -126,8 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				51EE3AD5193DF5FA00BD2C04 /* Models */,
-				51EE3AAF193DF5BC00BD2C04 /* ILAppDelegate.h */,
-				51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */,
+				51EE3AAF193DF5BC00BD2C04 /* AppDelegate.h */,
+				51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */,
 				51EE3AB2193DF5BC00BD2C04 /* Main.storyboard */,
 				51EE3AB5193DF5BC00BD2C04 /* ILViewController.h */,
 				51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */,
@@ -283,7 +283,7 @@
 			files = (
 				51EE3AAD193DF5BC00BD2C04 /* main.m in Sources */,
 				51EE3AE1193E14AA00BD2C04 /* ILNewTaskViewController.m in Sources */,
-				51EE3AB1193DF5BC00BD2C04 /* ILAppDelegate.m in Sources */,
+				51EE3AB1193DF5BC00BD2C04 /* AppDelegate.m in Sources */,
 				51EE3ADC193DF6EF00BD2C04 /* ILTodoTableViewController.m in Sources */,
 				51EE3AB7193DF5BC00BD2C04 /* ILViewController.m in Sources */,
 				51EE3AD8193DF61100BD2C04 /* Task.m in Sources */,

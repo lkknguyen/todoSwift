@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "TasksTableViewController.h"
 
-@interface ILNewTaskViewController : UIViewController
-
-@property (strong, nonatomic) TasksTableViewController *todoVC;
+@interface AddTaskViewController : UIViewController
+@property (nonatomic,strong) TasksTableViewController *tasksViewController;
 @end

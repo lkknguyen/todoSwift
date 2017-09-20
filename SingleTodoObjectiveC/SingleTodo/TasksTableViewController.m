@@ -8,58 +8,40 @@
 
 #import "TasksTableViewController.h"
 #import "Task.h"
-#import "ILNewTaskViewController.h"
+#import "AddTaskViewController.h"
 
 @interface TasksTableViewController () <UITableViewDataSource, UITableViewDelegate>
-
-@property (strong, nonatomic) NSMutableArray *tasks;
-@property (strong, nonatomic) IBOutlet UITableView *tasksTable;
-
+@property (nonatomic,strong) NSMutableArray *tasks;
+@property (nonatomic,weak) IBOutlet UITableView *tasksTableView;
 @end
 
 @implementation TasksTableViewController
+@synthesize tasksTableView = _tasksTableView;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
     self.tasks = [[NSMutableArray alloc] initWithArray:@[]];
-    
-    self.tasksTable.delegate = self;
-    self.tasksTable.dataSource = self;
-    
-    UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(showNewTaskViewController)];
-    
-    self.navigationItem.rightBarButtonItem = anotherButton;
-    
+    self.tasksTableView = self.tableView;
+    UIBarButtonItem *addTask = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(showAddTaskViewController)];
+    self.navigationItem.rightBarButtonItem = addTask;
     [self loadTasks];
-
 }
 
-- (void)showNewTaskViewController
+- (void)showAddTaskViewController
 {
-    ILNewTaskViewController *newTaskVC = [[ILNewTaskViewController alloc] init];
-    newTaskVC.todoVC = self;
-    
+    AddTaskViewController *newTaskVC = [[AddTaskViewController alloc] init];
+    newTaskVC.tasksViewController = self;
     [self.navigationController pushViewController:newTaskVC animated:YES];
 }
 
 - (void) loadTasks
 {
-    Task *task1 = [[Task alloc] initWithDescription:@"Go buy milk"];
-    Task *task2 = [[Task alloc] initWithDescription:@"Learn swift programming"];
-    
-    [self.tasks addObject:task1];
-    [self.tasks addObject:task2];
-    
-    [self.tasksTable reloadData];
-    
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    Task *firstTask = [[Task alloc] initWithDescription:@"Go buy milk"];
+    Task *secondTask = [[Task alloc] initWithDescription:@"Learn swift programming"];
+    [self.tasks addObject:firstTask];
+    [self.tasks addObject:secondTask];
+    [self.tasksTableView reloadData];
 }
 
 #pragma mark - Table view data source
@@ -71,35 +53,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    // Return the number of rows in the section.
     return self.tasks.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *cellIdentifier = @"taskCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
-    
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
-    }
-    
+    UITableViewCell *cell = [[UITableViewCell alloc] init];
     Task *task = self.tasks[indexPath.row];
     cell.textLabel.text = task.description;
-    if (task.isDone) {
+    if (task.isDone)
+    {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
-    } else {
+    } else
+    {
         cell.accessoryType = UITableViewCellAccessoryNone;
     }
-    
     return cell;
 }
-
 
 #pragma mark - Table view delegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self.tasksTable deselectRowAtIndexPath:indexPath animated:NO];
+    [self.tasksTableView deselectRowAtIndexPath:indexPath animated:NO];
     Task *task = [self.tasks objectAtIndex:indexPath.row];
     task.done = !task.isDone;
     [tableView reloadRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
@@ -108,7 +83,7 @@
 - (void)AddTask:(Task *)task
 {
     [self.tasks addObject:task];
-    [self.tasksTable reloadData];
+    [self.tasksTableView reloadData];
 }
 
 @end

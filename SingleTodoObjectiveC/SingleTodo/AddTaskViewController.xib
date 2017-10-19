@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ILNewTaskViewController">
+            <connections>
+                <outlet property="descriptionTextField" destination="3SN-Ly-SvH" id="jRo-Wx-Tww"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add task here" textAlignment="justified" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="3SN-Ly-SvH">
+                    <rect key="frame" x="16" y="159" width="343" height="30"/>
+                    <color key="backgroundColor" red="0.40789864539999998" green="0.40789864539999998" blue="0.40789864539999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="tintColor" red="1" green="0.7606637463" blue="0.32644080019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="light" enablesReturnKeyAutomatically="YES"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Lq-l8-tD2">
+                    <rect key="frame" x="217" y="205" width="142" height="19"/>
+                    <color key="backgroundColor" red="1" green="0.7606637463" blue="0.32644080019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="142" id="CTH-h5-nDY"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="1"/>
+                    <state key="normal" title="Add task">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="addTaskButtonPressed:" destination="-1" eventType="touchUpInside" id="6Tf-9e-Rnj"/>
+                    </connections>
+                </button>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QdC-nO-mGm">
+                    <rect key="frame" x="16" y="122" width="343" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="3SN-Ly-SvH" firstAttribute="centerX" secondItem="QdC-nO-mGm" secondAttribute="centerX" id="1TO-HC-VaP"/>
+                <constraint firstItem="3SN-Ly-SvH" firstAttribute="leading" secondItem="QdC-nO-mGm" secondAttribute="leading" id="9GF-Ui-76J"/>
+                <constraint firstItem="3Lq-l8-tD2" firstAttribute="trailing" secondItem="3SN-Ly-SvH" secondAttribute="trailing" id="FAP-jb-9SX"/>
+                <constraint firstItem="3SN-Ly-SvH" firstAttribute="trailing" secondItem="QdC-nO-mGm" secondAttribute="trailing" id="LTc-tZ-2jX"/>
+                <constraint firstItem="QdC-nO-mGm" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="bwE-XQ-Sns"/>
+                <constraint firstAttribute="trailing" secondItem="QdC-nO-mGm" secondAttribute="trailing" constant="16" id="ddm-J2-XLn"/>
+                <constraint firstItem="3Lq-l8-tD2" firstAttribute="top" secondItem="3SN-Ly-SvH" secondAttribute="bottom" constant="16" id="qMr-Kb-6PP"/>
+                <constraint firstItem="3SN-Ly-SvH" firstAttribute="top" secondItem="QdC-nO-mGm" secondAttribute="bottom" constant="16" id="raT-3D-NYd"/>
+                <constraint firstItem="QdC-nO-mGm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="reE-Pq-Wku"/>
+                <constraint firstItem="QdC-nO-mGm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="122" id="yuq-BU-e1t"/>
+            </constraints>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

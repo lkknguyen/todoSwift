@@ -1,5 +1,5 @@
 //
-//  ILAppDelegate.h
+//  ILTodoTableViewController.h
 //  SingleTodo
 //
 //  Created by Abraham Kuri on 6/3/14.
@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Task.h"
 
-@interface ILAppDelegate : UIResponder <UIApplicationDelegate>
+@interface TasksTableViewController : UITableViewController
 
-@property (strong, nonatomic) UIWindow *window;
+- (void) AddTask:(Task *)task;
 
 @end

@@ -12,20 +12,18 @@
 		51EE3AA5193DF5BC00BD2C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3AA4193DF5BC00BD2C04 /* UIKit.framework */; };
 		51EE3AAB193DF5BC00BD2C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AA9193DF5BC00BD2C04 /* InfoPlist.strings */; };
 		51EE3AAD193DF5BC00BD2C04 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AAC193DF5BC00BD2C04 /* main.m */; };
-		51EE3AB1193DF5BC00BD2C04 /* ILAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */; };
+		51EE3AB1193DF5BC00BD2C04 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */; };
 		51EE3AB4193DF5BC00BD2C04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AB2193DF5BC00BD2C04 /* Main.storyboard */; };
-		51EE3AB7193DF5BC00BD2C04 /* ILViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */; };
 		51EE3AB9193DF5BC00BD2C04 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AB8193DF5BC00BD2C04 /* Images.xcassets */; };
 		51EE3AC0193DF5BC00BD2C04 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3ABF193DF5BC00BD2C04 /* XCTest.framework */; };
 		51EE3AC1193DF5BC00BD2C04 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3AA0193DF5BC00BD2C04 /* Foundation.framework */; };
 		51EE3AC2193DF5BC00BD2C04 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EE3AA4193DF5BC00BD2C04 /* UIKit.framework */; };
 		51EE3ACA193DF5BC00BD2C04 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AC8193DF5BC00BD2C04 /* InfoPlist.strings */; };
 		51EE3ACC193DF5BC00BD2C04 /* SingleTodoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ACB193DF5BC00BD2C04 /* SingleTodoTests.m */; };
-		51EE3AD8193DF61100BD2C04 /* ILTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AD7193DF61100BD2C04 /* ILTask.m */; };
-		51EE3ADC193DF6EF00BD2C04 /* ILTodoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADA193DF6EF00BD2C04 /* ILTodoTableViewController.m */; };
-		51EE3ADD193DF6EF00BD2C04 /* ILTodoTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3ADB193DF6EF00BD2C04 /* ILTodoTableViewController.xib */; };
-		51EE3AE1193E14AA00BD2C04 /* ILNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADF193E14AA00BD2C04 /* ILNewTaskViewController.m */; };
-		51EE3AE2193E14AA00BD2C04 /* ILNewTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AE0193E14AA00BD2C04 /* ILNewTaskViewController.xib */; };
+		51EE3AD8193DF61100BD2C04 /* Task.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3AD7193DF61100BD2C04 /* Task.m */; };
+		51EE3ADC193DF6EF00BD2C04 /* TasksTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADA193DF6EF00BD2C04 /* TasksTableViewController.m */; };
+		51EE3AE1193E14AA00BD2C04 /* AddTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 51EE3ADF193E14AA00BD2C04 /* AddTaskViewController.m */; };
+		51EE3AE2193E14AA00BD2C04 /* AddTaskViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 51EE3AE0193E14AA00BD2C04 /* AddTaskViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,25 +45,22 @@
 		51EE3AAA193DF5BC00BD2C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51EE3AAC193DF5BC00BD2C04 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		51EE3AAE193DF5BC00BD2C04 /* SingleTodo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SingleTodo-Prefix.pch"; sourceTree = "<group>"; };
-		51EE3AAF193DF5BC00BD2C04 /* ILAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILAppDelegate.h; sourceTree = "<group>"; };
-		51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILAppDelegate.m; sourceTree = "<group>"; };
+		51EE3AAF193DF5BC00BD2C04 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		51EE3AB3193DF5BC00BD2C04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		51EE3AB5193DF5BC00BD2C04 /* ILViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILViewController.h; sourceTree = "<group>"; };
-		51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ILViewController.m; sourceTree = "<group>"; };
 		51EE3AB8193DF5BC00BD2C04 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		51EE3ABE193DF5BC00BD2C04 /* SingleTodoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SingleTodoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EE3ABF193DF5BC00BD2C04 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		51EE3AC7193DF5BC00BD2C04 /* SingleTodoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SingleTodoTests-Info.plist"; sourceTree = "<group>"; };
 		51EE3AC9193DF5BC00BD2C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		51EE3ACB193DF5BC00BD2C04 /* SingleTodoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleTodoTests.m; sourceTree = "<group>"; };
-		51EE3AD6193DF61100BD2C04 /* ILTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTask.h; sourceTree = "<group>"; };
-		51EE3AD7193DF61100BD2C04 /* ILTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTask.m; sourceTree = "<group>"; };
-		51EE3AD9193DF6EF00BD2C04 /* ILTodoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILTodoTableViewController.h; sourceTree = "<group>"; };
-		51EE3ADA193DF6EF00BD2C04 /* ILTodoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILTodoTableViewController.m; sourceTree = "<group>"; };
-		51EE3ADB193DF6EF00BD2C04 /* ILTodoTableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILTodoTableViewController.xib; sourceTree = "<group>"; };
-		51EE3ADE193E14AA00BD2C04 /* ILNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ILNewTaskViewController.h; sourceTree = "<group>"; };
-		51EE3ADF193E14AA00BD2C04 /* ILNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ILNewTaskViewController.m; sourceTree = "<group>"; };
-		51EE3AE0193E14AA00BD2C04 /* ILNewTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ILNewTaskViewController.xib; sourceTree = "<group>"; };
+		51EE3AD6193DF61100BD2C04 /* Task.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Task.h; sourceTree = "<group>"; };
+		51EE3AD7193DF61100BD2C04 /* Task.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Task.m; sourceTree = "<group>"; };
+		51EE3AD9193DF6EF00BD2C04 /* TasksTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TasksTableViewController.h; sourceTree = "<group>"; };
+		51EE3ADA193DF6EF00BD2C04 /* TasksTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TasksTableViewController.m; sourceTree = "<group>"; };
+		51EE3ADE193E14AA00BD2C04 /* AddTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTaskViewController.h; sourceTree = "<group>"; };
+		51EE3ADF193E14AA00BD2C04 /* AddTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTaskViewController.m; sourceTree = "<group>"; };
+		51EE3AE0193E14AA00BD2C04 /* AddTaskViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTaskViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,19 +121,16 @@
 			isa = PBXGroup;
 			children = (
 				51EE3AD5193DF5FA00BD2C04 /* Models */,
-				51EE3AAF193DF5BC00BD2C04 /* ILAppDelegate.h */,
-				51EE3AB0193DF5BC00BD2C04 /* ILAppDelegate.m */,
+				51EE3AAF193DF5BC00BD2C04 /* AppDelegate.h */,
+				51EE3AB0193DF5BC00BD2C04 /* AppDelegate.m */,
 				51EE3AB2193DF5BC00BD2C04 /* Main.storyboard */,
-				51EE3AB5193DF5BC00BD2C04 /* ILViewController.h */,
-				51EE3AB6193DF5BC00BD2C04 /* ILViewController.m */,
 				51EE3AB8193DF5BC00BD2C04 /* Images.xcassets */,
 				51EE3AA7193DF5BC00BD2C04 /* Supporting Files */,
-				51EE3AD9193DF6EF00BD2C04 /* ILTodoTableViewController.h */,
-				51EE3ADA193DF6EF00BD2C04 /* ILTodoTableViewController.m */,
-				51EE3ADB193DF6EF00BD2C04 /* ILTodoTableViewController.xib */,
-				51EE3ADE193E14AA00BD2C04 /* ILNewTaskViewController.h */,
-				51EE3ADF193E14AA00BD2C04 /* ILNewTaskViewController.m */,
-				51EE3AE0193E14AA00BD2C04 /* ILNewTaskViewController.xib */,
+				51EE3AD9193DF6EF00BD2C04 /* TasksTableViewController.h */,
+				51EE3ADA193DF6EF00BD2C04 /* TasksTableViewController.m */,
+				51EE3ADE193E14AA00BD2C04 /* AddTaskViewController.h */,
+				51EE3ADF193E14AA00BD2C04 /* AddTaskViewController.m */,
+				51EE3AE0193E14AA00BD2C04 /* AddTaskViewController.xib */,
 			);
 			path = SingleTodo;
 			sourceTree = "<group>";
@@ -175,8 +167,8 @@
 		51EE3AD5193DF5FA00BD2C04 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				51EE3AD6193DF61100BD2C04 /* ILTask.h */,
-				51EE3AD7193DF61100BD2C04 /* ILTask.m */,
+				51EE3AD6193DF61100BD2C04 /* Task.h */,
+				51EE3AD7193DF61100BD2C04 /* Task.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -258,11 +250,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51EE3ADD193DF6EF00BD2C04 /* ILTodoTableViewController.xib in Resources */,
 				51EE3AB9193DF5BC00BD2C04 /* Images.xcassets in Resources */,
 				51EE3AAB193DF5BC00BD2C04 /* InfoPlist.strings in Resources */,
 				51EE3AB4193DF5BC00BD2C04 /* Main.storyboard in Resources */,
-				51EE3AE2193E14AA00BD2C04 /* ILNewTaskViewController.xib in Resources */,
+				51EE3AE2193E14AA00BD2C04 /* AddTaskViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +273,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				51EE3AAD193DF5BC00BD2C04 /* main.m in Sources */,
-				51EE3AE1193E14AA00BD2C04 /* ILNewTaskViewController.m in Sources */,
-				51EE3AB1193DF5BC00BD2C04 /* ILAppDelegate.m in Sources */,
-				51EE3ADC193DF6EF00BD2C04 /* ILTodoTableViewController.m in Sources */,
-				51EE3AB7193DF5BC00BD2C04 /* ILViewController.m in Sources */,
-				51EE3AD8193DF61100BD2C04 /* ILTask.m in Sources */,
+				51EE3AE1193E14AA00BD2C04 /* AddTaskViewController.m in Sources */,
+				51EE3AB1193DF5BC00BD2C04 /* AppDelegate.m in Sources */,
+				51EE3ADC193DF6EF00BD2C04 /* TasksTableViewController.m in Sources */,
+				51EE3AD8193DF61100BD2C04 /* Task.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +481,7 @@
 				51EE3AD1193DF5BC00BD2C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		51EE3AD2193DF5BC00BD2C04 /* Build configuration list for PBXNativeTarget "SingleTodoTests" */ = {
 			isa = XCConfigurationList;
@@ -499,6 +490,7 @@
 				51EE3AD4193DF5BC00BD2C04 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

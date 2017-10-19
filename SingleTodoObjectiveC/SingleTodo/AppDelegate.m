@@ -6,14 +6,14 @@
 //  Copyright (c) 2014 icalialabs. All rights reserved.
 //
 
-#import "ILAppDelegate.h"
-#import "ILTodoTableViewController.h"
+#import "AppDelegate.h"
+#import "TasksTableViewController.h"
 
-@implementation ILAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    ILTodoTableViewController *todoVC = [[ILTodoTableViewController alloc] init];
+    TasksTableViewController *todoVC = [[TasksTableViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:todoVC];
     
     self.window.rootViewController = navigationController;

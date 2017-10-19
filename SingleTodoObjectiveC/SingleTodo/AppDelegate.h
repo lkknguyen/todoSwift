@@ -1,5 +1,5 @@
 //
-//  ILViewController.h
+//  ILAppDelegate.h
 //  SingleTodo
 //
 //  Created by Abraham Kuri on 6/3/14.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ILViewController : UIViewController
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
+
+@property (strong, nonatomic) UIWindow *window;
 
 @end
